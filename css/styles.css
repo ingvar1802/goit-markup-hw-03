@@ -27,6 +27,8 @@ body {
 }
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -81,15 +83,21 @@ body {
 
 /* Hero */
 
+.hero {
+  text-align: center;
+  background-color: #2f303a;
+}
+
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 46px;
   color: var(--primary-white-color);
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
+  
   text-transform: uppercase;
-  background-color: #2f303a;
   letter-spacing: 0.06em;
 }
 
