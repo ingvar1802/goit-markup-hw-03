@@ -62,7 +62,7 @@ body {
 
 /* page-header */
 .page-header {
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 .main-header {
@@ -75,7 +75,7 @@ body {
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* Site nav */
@@ -86,7 +86,7 @@ body {
 }
 
 .site-nav .item {
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 .site-nav .item + .item {
@@ -178,8 +178,16 @@ body {
   line-height: 1.16;
   text-align: center;
 }
+/* .none { 
+  display: none;
+}*/
 
 /* Features */
+
+.features-section {
+  padding-top: 103px;
+  padding-bottom: 0;
+}
 
 .features-list {
   display: flex;
@@ -224,6 +232,10 @@ body {
 }
 
 /* Works */
+
+.works-section {
+  padding-top: 85px;
+}
 
 .works-list {
   display: flex;
@@ -311,12 +323,12 @@ body {
 
 .clients-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-/* .clients-list .item:not(:last-child) {  
+.clients-list .item:not(:last-child) {
   margin-right: 30px;
-}*/
+}
 
 .clients {
   color: var(--primary-white-color);
@@ -343,6 +355,7 @@ body {
 .footer-flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo-footer {
@@ -351,7 +364,6 @@ body {
   font-size: 22px;
   line-height: 1.18;
   text-decoration: none;
-  /* background-color: #2f303a; */
 }
 
 .web-footer {
@@ -364,7 +376,6 @@ body {
 
 .address {
   color: var(--primary-white-color);
-  /* background-color: #2f303a; */
 
   font-style: normal;
   font-weight: 400;
@@ -372,11 +383,10 @@ body {
 }
 
 .footer-contacts {
+  padding-top: 48px;
   color: rgba(255, 255, 255, 0.6);
-  /* background-color: #2f303a; */
 
   line-height: 1.7;
-  /* background-color: #2f303a; */
 }
 
 .footer-item {
@@ -388,18 +398,28 @@ body {
   margin-top: 9px;
   margin-bottom: 9px;
 }
-
+.footer-join {
+  /* padding-top: 56px; */
+}
+.footer-submit {
+  /* padding-top: 56px; */
+}
 .join {
   color: var(--primary-white-color);
-  /* background-color: #2f303a; */
 
   font-weight: 700;
   text-transform: uppercase;
 }
+.join-list {
+  display: flex;
+}
 
+.join-list .item:not(:last-child) {
+  margin-right: 3px;
+}
 .footer-links {
   color: var(--primary-white-color);
-  background-color: #afb1b8;
+  background-color: var(--accent-color);
 
   font-size: 16px;
   line-height: 1.18;
@@ -416,7 +436,6 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   color: rgba(255, 255, 255, 0.4);
-  /* background-color: #2f303a; */
 
   font-size: 12px;
   line-height: 2;
