@@ -62,7 +62,8 @@ body {
 
 /* page-header */
 .page-header {
-  /* outline: 2px solid tomato; */
+  /* background-color: wheat; */
+  border-bottom: 1px solid #ececec;
 }
 
 .main-header {
@@ -72,7 +73,7 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   /* outline: 2px solid tomato; */
@@ -85,9 +86,8 @@ body {
   margin-left: 86px;
 }
 
-.site-nav .item {
+/* .site-nav .item { 
   /* outline: 2px solid tomato; */
-}
 
 .site-nav .item + .item {
   margin-left: 50px;
@@ -160,6 +160,7 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  /* background-color: tomato; */
 }
 
 .section.no-padding {
@@ -185,8 +186,10 @@ body {
 /* Features */
 
 .features-section {
-  padding-top: 103px;
-  padding-bottom: 0;
+  padding-top: 94px;
+  padding-bottom: 93px;
+  /* background-color: turquoise; */
+  border-bottom: 1px solid #ececec;
 }
 
 .features-list {
@@ -233,8 +236,9 @@ body {
 
 /* Works */
 
-.works-section {
-  padding-top: 85px;
+.image {
+  display: block;
+  border-radius: 4px;
 }
 
 .works-list {
@@ -245,12 +249,19 @@ body {
   margin-right: 30px;
 }
 
+.works-links {
+  text-decoration: none;
+}
+
 .works-title {
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  border-radius: 0px 0px 4px 4px;
 
   color: var(--primary-white-color);
-  background-color: #2f303a;
+  background-color: rgba(47, 48, 58, 0.8);
 
   font-weight: 700;
   font-size: 14px;
@@ -267,13 +278,30 @@ body {
   text-align: center;
 }
 
+.team-img {
+  display: block;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.team-info {
+  background-color: var(--primary-white-color);
+}
+
+.team-list > .item {
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
 .team-list .item:not(:last-child) {
   margin-right: 30px;
 }
 
 .team-title {
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
 
   color: var(--primary-text-color);
 
@@ -282,7 +310,7 @@ body {
   line-height: 1.18;
 }
 
-.team-desc {
+.team-job {
   margin-top: 0;
   margin-bottom: 16px;
 
@@ -315,7 +343,7 @@ body {
   display: flex;
 }
 
-.links-list .soc-item:not(:last-child) {
+.links-list .icons-item:not(:last-child) {
   margin-right: 3px;
 }
 
@@ -355,7 +383,7 @@ body {
 .footer-flex {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 
 .logo-footer {
@@ -375,6 +403,8 @@ body {
 }
 
 .address {
+  padding-top: 10px;
+
   color: var(--primary-white-color);
 
   font-style: normal;
@@ -392,18 +422,9 @@ body {
 .footer-item {
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 9px;
 }
 
-.footer-contacts .footer-item:first-child {
-  margin-top: 9px;
-  margin-bottom: 9px;
-}
-.footer-join {
-  /* padding-top: 56px; */
-}
-.footer-submit {
-  /* padding-top: 56px; */
-}
 .join {
   color: var(--primary-white-color);
 
@@ -432,15 +453,19 @@ body {
   background-color: var(--primary-white-color);
 }
 
-.developers {
+.copyright {
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 18px;
+  padding-bottom: 21px;
   color: rgba(255, 255, 255, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 
   font-size: 12px;
   line-height: 2;
   text-align: center;
 }
+
 /* Button */
 
 .button {
@@ -469,10 +494,9 @@ button {
 .filters {
   border-radius: 4px;
   padding: 6px 22px;
-
+  cursor: pointer;
   color: var(--primary-text-color);
-  background: #f5f4fa;
-
+  background-color: #f5f4fa;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -486,7 +510,7 @@ button {
   background: var(--accent-color);
 }
 
-.filters0title {
+.filters-title {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -494,7 +518,7 @@ button {
 .filters-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 19px;
 }
 
 .filters-container .item:not(:last-child) {
@@ -508,15 +532,33 @@ button {
 }
 
 .flex-element {
-  width: 380px;
+  width: 370px;
   margin: 15px;
+  /* border: 1px solid #EEEEEE; */
 }
 
-.port-links {
+.flex-element .img {
+  display: block;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.card-info {
+  background-color: var(--primary-white-color);
+  border: 1px solid #eeeeee;
+  border-top: none;
+  border-radius: 0px 0px 5px 5px;
+}
+.flex-element > .links {
   text-decoration: none;
 }
 
 .port-titles {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
   color: var(--primary-text-color);
 
   font-weight: 700;
@@ -525,6 +567,11 @@ button {
 }
 
 .par-titles {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
   color: var(--secondary-text-color);
 
   font-size: 16px;
